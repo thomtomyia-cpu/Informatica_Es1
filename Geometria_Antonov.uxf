@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>16</y>
+      <w>400</w>
+      <h>216</h>
+    </coordinates>
+    <panel_attributes>Poligono
+--
+- nome: String
+- nLati: int
+--
++Poligono(nome: String, nLati: int)
++calcolaArea(): double
++calcolaPerimetro(): double
++confrontaCon(altra: Poligono, cosa: String): String
++getNome(): String
++setNome(nome: String)
++getNLati(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>16</x>
+      <y>304</y>
+      <w>220</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Ottagono
+--
+-lato: double
+--
++Ottagono(lato: double)
++calcolaArea(): double
++calcolaPerimetro(): double
++getLato(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>304</y>
+      <w>336</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Rettangolo
+--
+-base: double
+-altezza: double
+--
++Rettangolo(base: double, altezza: double)
++calcolaArea(): double
++calcolaPerimetro(): double
++getBase(): double
++getAltezza(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>304</y>
+      <w>392</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>TriangoloIsoscele
+--
+-base: double
+-latoUguale: double
+--
++TriangoloIsoscele(base: double, latoUguale: double)
++calcolaArea(): double
++calcolaPerimetro(): double
++getBase(): double
++getLatoUguale(): double</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>560</y>
+      <w>200</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Quadrato
+--
++Quadrato(lato: double)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>232</y>
+      <w>96</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>86.0;0.0;4.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>120</x>
+      <y>232</y>
+      <w>376</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>376.0;0.0;6.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>232</y>
+      <w>296</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>4.0;0.0;296.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>464</x>
+      <y>488</y>
+      <w>8</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>4.0;0.0;4.0;72.0</additional_attributes>
+  </element>
+</diagram>

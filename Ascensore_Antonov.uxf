@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>176</x>
+      <y>16</y>
+      <w>448</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>Montacarichi
+--
+- pianiTotali: int
+- pianoCorrente: int
+- portaAperta: boolean
+--
++Montacarichi(pianiTotali: int, pianoCorrente: int)
++sali()
++scendi()
++apriPorta()
++chiudiPorta()
++getPianiTotali(): int
++getPianoCorrente(): int
++isPortaAperta(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>396</x>
+      <y>280</y>
+      <w>8</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>4.0;0.0;4.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>72</x>
+      <y>352</y>
+      <w>656</w>
+      <h>248</h>
+    </coordinates>
+    <panel_attributes>Ascensore
+--
+- pianoPartenza: int
+- pianoArrivo: int
+- pianiPrenotati: int[]
+- nPrenotati: int
+--
++Ascensore(pianiTotali: int, pianoPartenza: int, pianoArrivo: int, nPrenotati: int)
++prenota(piano: int)
++ePrenotato(piano: int): boolean
++arriva()
++getPianoPartenza(): int
++getPianoArrivo(): int
++getNPrenotati(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

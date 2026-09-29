@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>16</x>
+      <y>16</y>
+      <w>472</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Partita
+--
+- giocatore1: Giocatore
+- giocatore2: Giocatore
+- mosse: Mossa[]
+- nMosse: int
+--
++Partita(giocatore1: Giocatore, giocatore2: Giocatore)
++registraMossa(pezzo: Pezzo, arrivo: String, cattura: boolean)
++getNumeroMosse(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>172</x>
+      <y>216</y>
+      <w>8</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>4.0;0.0;4.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>16</x>
+      <y>288</y>
+      <w>320</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Giocatore
+--
+- nome: String
+- colore: String
+- pezzi: Pezzo[]
+--
++Giocatore(nome: String, colore: String)
++aggiungiPezzo(pezzo: Pezzo)
++getNome(): String
++getColore(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>336</x>
+      <y>304</y>
+      <w>472</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>0.0;88.0;470.0;0.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>16</x>
+      <y>560</y>
+      <w>424</w>
+      <h>184</h>
+    </coordinates>
+    <panel_attributes>Mossa
+--
+- pezzo: Pezzo
+- partenza: String
+- arrivo: String
+- cattura: boolean
+--
++Mossa(pezzo: Pezzo, arrivo: String, cattura: boolean)
++getDescrizione(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>224</x>
+      <y>392</y>
+      <w>584</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>4.0;168.0;582.0;0.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>806</x>
+      <y>192</y>
+      <w>700</w>
+      <h>232</h>
+    </coordinates>
+    <panel_attributes>Pezzo
+--
+- nome: String
+- colore: String
+- riga: int
+- colonna: int
+--
++Pezzo(nome: String, colore: String, riga: int, colonna: int)
++muovi(riga: int, colonna: int): String
++getCasella(): String
++getNome(): String
++getColore(): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>16</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Alfiere
+--
++Alfiere(colore: String, riga: int, colonna: int)
++muovi(riga: int, colonna: int): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>120</y>
+      <w>112</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>106.0;72.0;4.0;0.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>968</x>
+      <y>16</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Cavallo
+--
++Cavallo(colore: String, riga: int, colonna: int)
++muovi(riga: int, colonna: int): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1152</x>
+      <y>120</y>
+      <w>8</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>4.0;72.0;4.0;0.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1376</x>
+      <y>16</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Torre
+--
++Torre(colore: String, riga: int, colonna: int)
++muovi(riga: int, colonna: int): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1456</x>
+      <y>120</y>
+      <w>112</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>6.0;72.0;108.0;0.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>560</x>
+      <y>496</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Donna
+--
++Donna(colore: String, riga: int, colonna: int)
++muovi(riga: int, colonna: int): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>744</x>
+      <y>424</y>
+      <w>112</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>106.0;0.0;4.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>968</x>
+      <y>496</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Re
+--
++Re(colore: String, riga: int, colonna: int)
++muovi(riga: int, colonna: int): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1152</x>
+      <y>424</y>
+      <w>8</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>4.0;0.0;4.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1376</x>
+      <y>496</y>
+      <w>376</w>
+      <h>104</h>
+    </coordinates>
+    <panel_attributes>Pedone
+--
++Pedone(colore: String, riga: int, colonna: int)
++muovi(riga: int, colonna: int): String</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1456</x>
+      <y>424</y>
+      <w>112</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>6.0;0.0;108.0;72.0</additional_attributes>
+  </element>
+</diagram>

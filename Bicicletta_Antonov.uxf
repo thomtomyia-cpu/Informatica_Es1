@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.3">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>36</x>
+      <y>16</y>
+      <w>528</w>
+      <h>264</h>
+    </coordinates>
+    <panel_attributes>MezzoDiTrasporto
+--
+- nome: String
+- anno: int
+- velocitaMassima: double
+- inMarcia: boolean
+--
++MezzoDiTrasporto(nome: String, anno: int, velocitaMassima: double)
++mount()
++dismount()
++getNome(): String
++getAnno(): int
++getVelocitaMassima(): double
++isInMarcia(): boolean</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>280</y>
+      <w>8</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>4.0;0.0;4.0;72.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>352</y>
+      <w>600</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Bicicletta
+--
+- marcia: int
+- numeriMarce: int
+--
++Bicicletta(nome: String, anno: int, velocitaMassima: double, numeriMarce: int)
++cambiaMarcia(nuovaMarcia: int)
++pedala()
++getMarcia(): int
++getNumeriMarce(): int</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
